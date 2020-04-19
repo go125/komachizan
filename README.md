@@ -1,6 +1,7 @@
 # ten_puzzle
-ten_puzzleの派生版
+ten_puzzle Japanese Version "Komachizan"
 
-1~9の間に演算子を入れて100を作る
+Make 100 from "1 2 3 4 5 6 7 8 9" and "+ - * /"
 
-答えは15通りみたい
+15 Answers when " " is not allowed
+101 Answers when " " is allowed
