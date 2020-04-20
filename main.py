@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+csv_name="result.csv"
+
 import itertools
+
+seq = (0,1,2,3,4,5,6,7)
+
+seq_list=list(itertools.permutations(seq))
 
 def make_oplist(num):
     op_list=[]
@@ -56,7 +62,7 @@ def main(max_count=4**8,margin=0.00001):
         oplist=make_oplist(count)
         for i in range(0,len(seq_list)):
             if i%10000==0:
-                print("In " +str(count)+" step, "+str(i)+"/"+str(len(seq_list))+" has finished.")
+                print("In " +str(count)+"/"+str(max_count)+" steps, "+str(i)+"/"+str(len(seq_list))+" has finished.")
                 print(func(seq_list[i],oplist))
             try:
                 eval(func(seq_list[i],oplist))
@@ -75,6 +81,13 @@ def main(max_count=4**8,margin=0.00001):
 
 main()
 
-print(good_result)
-
-len(good_result)
+def make_csv(csv_name):
+    global good_result
+    with open(csv_name,'a') as f:
+        writer = csv.writer(f)
+        writer.writerow(["function"])
+        for i in range(len(good_result)):
+            func=good_result[i]
+            writer.writerow([func])
+            
+make_csv(csv_name)
