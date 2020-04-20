@@ -4,6 +4,7 @@
 csv_name="result.csv"
 
 import itertools
+import csv
 
 seq = (0,1,2,3,4,5,6,7)
 
@@ -51,11 +52,11 @@ def func(seqs,oplist):
         tmp_last_list=new_tmp_last_list
  
 
-    return tmp_list
+    return tmp_list[0]
                 
 good_result=[]
 
-def main(max_count=4**8,margin=0.00001):
+def main(max_count=2**8,margin=0.00001):
     global good_result, seq_list
     count=0
     while count<=max_count:
