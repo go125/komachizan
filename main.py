@@ -6,6 +6,9 @@ csv_long_name="result_long.csv"
 
 import itertools
 import csv
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 seq = (0,1,2,3,4,5,6,7)
 
@@ -64,7 +67,8 @@ def main(csv_long_name,max_count=2**8,margin=0.00001):
         oplist=make_oplist(count)
         for i in range(0,len(seq_list)):
             if i%10000==0:
-                print("In " +str(count)+"/"+str(max_count)+" steps, "+str(i)+"/"+str(len(seq_list))+" has finished.")
+            	strs="In " +str(count)+"/"+str(max_count)+" steps, "+str(i)+"/"+str(len(seq_list))+" has finished."
+            	logging.info("%s",strs)
             try:
                 eval(func(seq_list[i],oplist))
             except SyntaxError:
