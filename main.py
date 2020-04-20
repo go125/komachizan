@@ -2,6 +2,7 @@
 # coding: utf-8
 
 csv_name="result.csv"
+csv_long_name="result_long.csv"
 
 import itertools
 import csv
@@ -56,7 +57,7 @@ def func(seqs,oplist):
                 
 good_result=[]
 
-def main(max_count=2**8,margin=0.00001):
+def main(csv_long_name,max_count=2**8,margin=0.00001):
     global good_result, seq_list
     count=0
     while count<=max_count:
@@ -74,9 +75,12 @@ def main(max_count=2**8,margin=0.00001):
             error=res-100
             if abs(error)<margin:
                 good_result.append(func(seq_list[i],oplist))
+                with open(csv_long_name,'a') as f:
+                    writer = csv.writer(f)
+                    writer.writerow([func(seq_list[i],oplist)])
         count+=1
 
-main()
+main(csv_long_name)
 
 good_result=set(good_result)
 good_result=list(good_result)
