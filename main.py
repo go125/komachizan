@@ -64,23 +64,22 @@ def main(max_count=2**8,margin=0.00001):
         for i in range(0,len(seq_list)):
             if i%10000==0:
                 print("In " +str(count)+"/"+str(max_count)+" steps, "+str(i)+"/"+str(len(seq_list))+" has finished.")
-                print(func(seq_list[i],oplist))
             try:
                 eval(func(seq_list[i],oplist))
             except SyntaxError:
-                count+=1
                 continue
             except ZeroDivisionError:
-                count+=1
                 continue
             res=eval(func(seq_list[i],oplist))
             error=res-100
             if abs(error)<margin:
-                print(func(seq_list[i],oplist))
                 good_result.append(func(seq_list[i],oplist))
         count+=1
 
 main()
+
+good_result=set(good_result)
+good_result=list(good_result)
 
 def make_csv(csv_name):
     global good_result
