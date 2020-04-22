@@ -60,7 +60,7 @@ def func(seqs,oplist):
                 
 good_result=[]
 
-def main(csv_long_name,max_count=2**8,margin=0.00001):
+def main(csv_long_name,max_count=4**8,margin=0.00001):
     global good_result, seq_list
     count=0
     while count<=max_count:
