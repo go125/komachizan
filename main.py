@@ -16,7 +16,7 @@ seq_list=list(itertools.permutations(seq))
 
 def make_oplist(num):
     op_list=[]
-    for i in range(0,9):
+    for i in range(0,8):
         rand_int=num%4
         if rand_int==0:
             op_list.append("+")
@@ -32,7 +32,6 @@ def make_oplist(num):
 def func(seqs,oplist):
     tmp_list=["1","2","3","4","5","6","7","8","9"]
     tmp_last_list=[1,2,3,4,5,6,7,8,9]
-    #end number of each content of tmp_list
     for j in range (0,len(seqs)):
         last_num=seqs[j]+1
         next_first_num=last_num+1
@@ -44,7 +43,7 @@ def func(seqs,oplist):
         for m in range(0,last_num_list_num):
             new_tmp_list.append(tmp_list[m])
             new_tmp_last_list.append(tmp_last_list[m])
-        new_content="("+tmp_list[last_num_list_num]+oplist[last_num_list_num]+tmp_list[last_num_list_num+1]+")"
+        new_content="("+tmp_list[last_num_list_num]+oplist[last_num-1]+tmp_list[last_num_list_num+1]+")"
         new_tmp_list.append(new_content)
         new_tmp_last_list.append(tmp_last_list[last_num_list_num])
 
@@ -67,8 +66,8 @@ def main(csv_long_name,max_count=4**8,margin=0.00001):
         oplist=make_oplist(count)
         for i in range(0,len(seq_list)):
             if i%10000==0:
-            	strs="In " +str(count)+"/"+str(max_count)+" steps, "+str(i)+"/"+str(len(seq_list))+" has finished."
-            	logging.info("%s",strs)
+                strs="In " +str(count)+"/"+str(max_count)+" steps, "+str(i)+"/"+str(len(seq_list))+" has finished."
+                logging.info("%s",strs)
             try:
                 eval(func(seq_list[i],oplist))
             except SyntaxError:
