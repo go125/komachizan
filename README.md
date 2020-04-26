@@ -152,3 +152,5 @@ You can get "aligned.csv".
 
 "aligned.csv" doesn't contain same data and it's aligned. 
 
+By opening "check_formula_value.csv" in the Excel, you can check if the all formulas' values are 100.
+
