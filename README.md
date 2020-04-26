@@ -23,7 +23,7 @@ Make 100 from "1 2 3 4 5 6 7 8 9" and "+ - * /"
  '1*2*3-4*5+6*7+8*9'
 ```
 
-101 Answers when " " (blank) is allowed
+[101 Answers](https://github.com/go125/ten_puzzle/blob/bdf67f02c780e9feec2ae08ff76737e3ce338adc/main.ipynb) when " " (blank) is allowed
 
 ```
 '12+34+5*6+7+8+9',
