@@ -2,7 +2,7 @@
 
 Make 100 putting "+ - * /" between "1 2 3 4 5 6 7 8 9" .
 
-[15 Answers](https://github.com/go125/ten_puzzle/blob/8f8882694d3ab26cfaf9d090b73b924543047bc6/main.ipynb) when " " (blank) is not allowed .
+[15 Answers](https://github.com/go125/ten_puzzle/blob/8f8882694d3ab26cfaf9d090b73b924543047bc6/main.ipynb) when " " (blank) is not allowed.
 
 ```
  '1*2*3*4+5+6+7*8+9',
@@ -22,7 +22,7 @@ Make 100 putting "+ - * /" between "1 2 3 4 5 6 7 8 9" .
  '1*2*3-4*5+6*7+8*9'
 ```
 
-[101 Answers](https://github.com/go125/ten_puzzle/blob/bdf67f02c780e9feec2ae08ff76737e3ce338adc/main.ipynb) when " " (blank) is allowed .
+[101 Answers](https://github.com/go125/ten_puzzle/blob/bdf67f02c780e9feec2ae08ff76737e3ce338adc/main.ipynb) when " " (blank) is allowed.
 
 ```
 '12+34+5*6+7+8+9',
@@ -128,6 +128,6 @@ Make 100 putting "+ - * /" between "1 2 3 4 5 6 7 8 9" .
  '123+4-5+67-89'
 ```
 
-17238 Answers when "(" and ")" are allowed .
+17238 Answers when "(" and ")" are allowed.
 
-(Please see [result.csv](https://github.com/go125/ten_puzzle/blob/master/result.csv) .)
+(Please see [result.csv](https://github.com/go125/ten_puzzle/blob/master/result.csv).)
