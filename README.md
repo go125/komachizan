@@ -1,6 +1,6 @@
 # Komachizan (Japanese mathematic puzzle)
 
-Make 100 putting "+ - * /" between "1 2 3 4 5 6 7 8 9" .
+Make 100 by putting "+ - * /" between "1 2 3 4 5 6 7 8 9" .
 
 [15 Answers](https://github.com/go125/ten_puzzle/blob/8f8882694d3ab26cfaf9d090b73b924543047bc6/main.ipynb) when " " (blank) is not allowed.
 
