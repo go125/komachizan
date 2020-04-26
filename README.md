@@ -130,4 +130,4 @@ Make 100 putting "+ - * /" between "1 2 3 4 5 6 7 8 9" .
 
 17238 Answers when "(" and ")" are allowed.
 
-(Please see [result.csv](https://github.com/go125/ten_puzzle/blob/master/result.csv).)
+(Please see [result.csv](https://github.com/go125/ten_puzzle/blob/master/aligned.csv).)
