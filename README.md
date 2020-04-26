@@ -3,7 +3,7 @@ ten_puzzle Japanese Version "Komachizan"
 
 Make 100 from "1 2 3 4 5 6 7 8 9" and "+ - * /"
 
-15 Answers when " " (blank) is not allowed
+[15 Answers](https://github.com/go125/ten_puzzle/blob/8f8882694d3ab26cfaf9d090b73b924543047bc6/main.ipynb) when " " (blank) is not allowed
 
 ```
  '1*2*3*4+5+6+7*8+9',
