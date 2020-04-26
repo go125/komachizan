@@ -130,4 +130,21 @@ Make 100 putting "+ - * /" between "1 2 3 4 5 6 7 8 9" .
 
 17238 Answers when "(" and ")" are allowed.
 
-(Please see [aligned.csv](https://github.com/go125/ten_puzzle/blob/master/aligned.csv).)
+Please see [aligned.csv](https://github.com/go125/ten_puzzle/blob/master/aligned.csv).
+
+## How to make aligned.csv
+
+### 1. Execute "main.py".
+
+You can get "result_long.csv" and "result.csv".
+
+"result_long.csv" contains a lot of same data.
+
+"result.csv" doesn't contain same data, but it's not aligned.
+
+### 2. Execute "make_aligned_result_file.ipynb".
+
+You can get "aligned.csv".
+
+"aligned.csv" doesn't contain same data and it's aligned. 
+
