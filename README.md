@@ -142,9 +142,7 @@ You can get "result_long.csv" and "result.csv".
 
 "result.csv" doesn't contain same data, but it's not aligned.
 
-When you execute "main.py", you also get "log.txt" as a log.
-
-If you want to know more about "main.py", "tutrial.ipynb" provides more information about "main.py".
+If you want to know more about "main.py", "tutrial_Japanese.ipynb" provides more information about "main.py".
 
 ### 2. Execute "make_aligned_result_file.ipynb".
 
