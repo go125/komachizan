@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+#Comments are in Japanese.
 
 csv_name="result.csv"
 csv_long_name="result_long.csv"
