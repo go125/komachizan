@@ -140,7 +140,7 @@ You can get "result_long.csv" and "result.csv".
 
 "result_long.csv" contains a lot of same data.
 
-"result.csv" doesn't contain same data, but it's not aligned.
+"result.csv" doesn't contain the same data, but it's not aligned.
 
 If you want to know more about "main.py", "tutrial_Japanese.ipynb" provides more information about "main.py".
 
